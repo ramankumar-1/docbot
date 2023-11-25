@@ -1,0 +1,11 @@
+streamlit
+langchain
+python-dotenv
+huggingface
+huggingface-hub
+cohere
+pypdf
+docx2txt
+chroma-hnswlib
+chromadb
+sentence-transformers
