@@ -1,4 +1,5 @@
 # Importing the necessary libraries
+import os
 import streamlit as st
 from dotenv import load_dotenv
 from langchain.chat_models import ChatCohere
@@ -8,15 +9,14 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import ConversationalRetrievalChain
 
-# Loading the environment variables
-load_dotenv()
+# Setting the API keys' environment variables from Streamlit secrets
+os.environ["HUGGINGFACEHUB_API_TOKEN"]=st.secrets["HUGGINGFACEHUB_API_TOKEN"]
+os.environ["COHERE_API_KEY"]=st.secrets["COHERE_API_KEY"]
 
 # Directory for storing the uploaded files
 temp_dir = r"./temp_dir"
 
 # Extract the text content from the files
-
-
 def extract_text(files):
     docs = []
 
