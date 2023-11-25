@@ -1,4 +1,4 @@
-pysqlite3-binary
+pysqlite3
 streamlit
 langchain
 python-dotenv
