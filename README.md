@@ -17,11 +17,11 @@ Steps to run on your PC/ Local Machine: -
    `touch .env`
 
 4. Create Account and obtain your [Huggingface](https://huggingface.co/settings/tokens) and [Cohere](https://dashboard.cohere.com/api-keys) API keys. 
-5. Add the API keys to the Environment Variable File (.env) which you just created. 
-	`
+5. Add the API keys to the Environment Variable File (.env) which you just created.<br>
+	```
 	HUGGINGFACEHUB_API_TOKEN=<your-hugging-face-api-key>
 	COHERE_API_KEY=<your-cohere-api-key>
-`
-6. Run the application. 
+	```
+7. Run the application. 
 
     `streamlit run app.py`
