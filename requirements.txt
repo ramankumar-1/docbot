@@ -1,6 +1,7 @@
 pysqlite3-binary
 streamlit
 langchain
+langchain-community
 python-dotenv
 huggingface
 huggingface-hub
